@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
     <link rel="stylesheet" href="style.css">
 <head>
   <meta charset="UTF-8" />
@@ -14,51 +14,71 @@
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- Terminal Loader
+<div id="terminal-loader">
+  <div class="terminal-window">
+    <div class="terminal-header">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+    </div>
+    <pre id="terminal-text"></pre>
+  </div>
+</div> -->
+
+  
   <header>
+    <div class="logo"></div>
+    <nav class="nav-links">
     <div class="container nav">
       <div class="logo"><img src="img/voltix.png" alt=""></div>
+      <div class="menu-toggle" id="menuToggle">
+       <span></span>
+       <span></span>
+       <span></span>
+     </div>
+
       <nav class="nav-links">
-        <a href="#about">Обо мне</a>
-        <a href="#skills">Навыки</a>
-        <a href="#projects">Проекты</a>
-        <a href="#contact">Контакты</a>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero -->
-  <section id="about" class="reveal" class="hero">
+  <section id="about" class="reveal hero">
     <div class="container">
-      <h1>Графический дизайнер <br />и <span>веб‑разработчик</span></h1>
+      <h1>Graphic Designer <br />and <span>Web Developer</span></h1>
       <p>
-        Я создаю визуальные системы, интерфейсы и масштабируемые веб‑приложения
-        для бизнеса и цифровых продуктов.
+        I create logos, banners, visual systems, interfaces, and scalable web applications
+        for businesses and digital products.
       </p>
-      <a href="#projects" class="btn">Смотреть проекты</a>
+      <a href="#projects" class="btn">View Projects</a>
     </div>
   </section>
 
   <!-- About -->
   <section id="about">
-    <div class="about-card reveal class="container">
-      <h2 class="section-title">Обо мне</h2>
+    <div class="about-card reveal class" container>
+      <h2 class="section-title">About Me</h2>
       <p class="section-subtitle">
-        Комбинация дизайна, логики и кода для создания современных продуктов.
+        A combination of design, logic, and code to create modern digital products.
       </p>
       <div class="about-grid">
         <div class="about-card">
-          <h3>Дизайн</h3>
+          <h3>Design</h3>
           <p>
-            UI/UX, брендинг, графика, типографика, дизайн‑системы.
-            Фокус на эстетике и удобстве пользователя.
+            UI/UX, branding, graphics, typography, design systems.
+            Focused on aesthetics and user experience.
           </p>
         </div>
         <div class="about-card">
-          <h3>Разработка</h3>
+          <h3>Development</h3>
           <p>
-            Frontend‑разработка, архитектура интерфейсов,
-            чистый и масштабируемый код.
+            Frontend development, interface architecture,
+            clean and scalable code.
           </p>
         </div>
       </div>
@@ -66,57 +86,54 @@
   </section>
 
   <!-- Skills -->
-  <section   class="skill reveal" id="skills">
+  <section class="skill reveal" id="skills">
     <div class="container">
-      <h2 class="section-title">Навыки</h2>
-      <p class="section-subtitle">Технологии и инструменты, которые я использую</p>
+      <h2 class="section-title">Skills</h2>
+      <p class="section-subtitle">Technologies and tools I use</p>
       <div class="skills">
         <div class="skill">
           <h4>HTML / CSS</h4>
-          <p>Семантика, адаптивность, анимации, дизайн‑системы</p>
+          <p>Semantic markup, responsiveness, animations, design systems</p>
         </div>
         <div class="skill">
           <h4>JavaScript</h4>
-          <p>ES6+, архитектура, интерактивные интерфейсы</p>
+          <p>ES6+, architecture, interactive interfaces</p>
         </div>
         <div class="skill">
           <h4>UI / UX Design</h4>
-          <p>Figma, прототипирование, user flow</p>
-        </div>
-        <div class="skill">
-          <h4>Performance</h4>
-          <p>Оптимизация, масштабируемость, чистый код</p>
+          <p>photoshop, illustrator, indesign</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Projects -->
-  <section  class="project reveal" id="projects">
+  <section class="project reveal" id="projects">
     <div class="container">
-      <h2 class="section-title">Проекты</h2>
-      <p class="section-subtitle">Избранные работы и концепты</p>
+      <h2 class="section-title">Projects</h2>
+      <p class="section-subtitle">Selected works and concepts</p>
       <div class="projects">
         <div class="project">
-          <div class="project-image"></div>
+          <div class="project-image">
+            
+            <img src="/img/megatech-13.png" alt="">
+          </div>
+                                    
           <div class="project-content">
             <h4>Digital Product</h4>
-            <p>UI/UX дизайн и frontend для SaaS‑платформы</p>
+            <p>UI/UX design</p>
           </div>
         </div>
         <div class="project">
-          <div class="project-image"></div>
+          <div class="project-image">
+            <img src="/img/leptop.png" alt="">
+</div>
+
           <div class="project-content">
             <h4>Creative Portfolio</h4>
-            <p>Дизайн и разработка персонального сайта</p>
+            <p>Design and development of a personal website</p>
           </div>
         </div>
-        <div class="project">
-          <div class="project-image"></div>
-          <div class="project-content">
-            <h4>Brand Identity</h4>
-            <p>Графический дизайн и визуальная система</p>
-          </div>
         </div>
       </div>
     </div>
@@ -126,22 +143,23 @@
   <section id="contact">
     <div class="container">
       <div class="contact-card">
-        <h2 class="section-title">Связаться со мной</h2>
+        <h2 class="section-title">Get in Touch</h2>
         <p class="section-subtitle">
-          Готов к сотрудничеству и масштабным проектам
+          Open to collaboration and large-scale projects
         </p>
-        <a href="mailto:your@email.com" class="btn">Написать мне</a>
+        <a href="contact.html" class="btn">Contact Me</a>
       </div>
     </div>
   </section>
 
   <footer>
-    © 2025. Portfolio. Все права защищены.
+    © 2025. Portfolio. All rights reserved.
   </footer>
 
-
-
-  
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
+
+
 </html>
+
